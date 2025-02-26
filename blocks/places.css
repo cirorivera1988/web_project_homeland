@@ -1,3 +1,7 @@
+.places {
+  max-width: 1184px;
+  width: 100%;
+}
 .places__card {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -83,7 +87,11 @@
 
   color: rgba(170, 170, 170, 1);
 }
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .places {
+    max-width: 720px;
+    width: 100%;
+  }
   .places__card {
     max-width: 720px;
     width: 100%;
@@ -92,6 +100,7 @@
   }
   .places__card-title {
     max-width: 340px;
+    width: 100%;
     max-height: 46px;
     font-family: Inter;
     font-size: 42px;
@@ -99,6 +108,7 @@
   }
   .places__card-image {
     max-width: 340px;
+    width: 100%;
     max-height: 340px;
   }
   .places__card-description {
@@ -108,9 +118,14 @@
     line-height: 26.08px;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .places {
+    max-width: 300px;
+    width: 100%;
+  }
   .places__card {
-    width: 320px;
+    max-width: 300px;
+    width: 100%;
     grid-template-columns: 1fr;
     grid-template-areas:
       "title"
@@ -119,12 +134,12 @@
       "content"
       "boton";
     row-gap: 30px;
-    max-width: 100%;
-    padding: 20px;
+    padding: 10px;
   }
   .places__card-title {
-    max-width: 288px;
-    max-height: 35px;
+    max-width: 320px;
+    width: 100%;
+    max-height: 100;
     font-family: Inter;
     font-weight: 900;
     font-size: 32px;
@@ -132,10 +147,12 @@
   }
   .places__card-image {
     max-width: 320px;
+    width: 100%;
     max-height: 100%;
   }
   .places__card-description {
-    max-width: 288px;
+    max-width: 320px;
+    width: 100%;
     max-height: 100%;
   }
 }
